@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>600735072264-uh5v0n61id58r3dh6745u3ai26baca8c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.600735072264-uh5v0n61id58r3dh6745u3ai26baca8c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuiU2jUwojXL_ln_5E6Q2L1lFzEM2L7Sk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>600735072264</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.sSs</string>
+	<key>PROJECT_ID</key>
+	<string>smatsustainsolution</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smatsustainsolution.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:600735072264:ios:d041a1aed1fe4b4d7fd1bd</string>
+	<key>DATABASE_URL</key>
+	<string>https://smatsustainsolution-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

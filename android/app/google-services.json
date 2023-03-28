@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "600735072264",
+    "firebase_url": "https://smatsustainsolution-default-rtdb.firebaseio.com",
+    "project_id": "smatsustainsolution",
+    "storage_bucket": "smatsustainsolution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600735072264:android:4b1f6bdb8c3c0eed7fd1bd",
+        "android_client_info": {
+          "package_name": "com.example.s_s_s"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600735072264-3aia7dtvrjl4b37n95unhq3pqe6q0vl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqyv7M5JIO846-EewLZwiE67cUUwrIfJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600735072264-3aia7dtvrjl4b37n95unhq3pqe6q0vl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
