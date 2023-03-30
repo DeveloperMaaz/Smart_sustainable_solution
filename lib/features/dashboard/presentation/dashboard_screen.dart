@@ -36,31 +36,31 @@ class _Dashboard_screenState extends State<Dashboard_screen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TabBarIconButton(
-                color: currentIndex == 0 ? Colors.red : Colors.grey,
+                color: currentIndex == 0 ? Colors.lightGreen : Colors.grey,
                 onPress: () {
                   setState(() {
                     currentIndex = 0;
                   });
                 },
-                iconImage: Icons.home,
+                iconImage: "assets/images/dispose.png",
               ),
               TabBarIconButton(
-                color: currentIndex == 1 ? Colors.red : Colors.grey,
+                color: currentIndex == 1 ? Colors.lightGreen : Colors.grey,
                 onPress: () {
                   setState(() {
                     currentIndex = 1;
                   });
                 },
-                iconImage: Icons.water_drop,
+                iconImage: "assets/images/drop.png",
               ),
               TabBarIconButton(
-                color: currentIndex == 2 ? Colors.red : Colors.grey,
+                color: currentIndex == 2 ? Colors.lightGreen : Colors.grey,
                 onPress: () {
                   setState(() {
                     currentIndex = 2;
                   });
                 },
-                iconImage: Icons.transfer_within_a_station,
+                iconImage: "assets/images/basket.png",
               ),
             ],
           ),

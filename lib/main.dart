@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:s_s_s/features/authentication/presentation/signup_screen.dart';
 import 'package:s_s_s/features/dashboard/presentation/dashboard_screen.dart';
 import 'package:s_s_s/features/dashboard/presentation/home_screen.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Dashboard_screen(),
+      home: const SignUpScreen(),
     );
   }
 }
