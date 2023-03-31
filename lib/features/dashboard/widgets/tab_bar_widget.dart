@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TabBarIconButton extends StatelessWidget {
   final Color color;
   final VoidCallback onPress;
-  final IconData iconImage;
+  final String iconImage;
 
   const TabBarIconButton(
       {Key? key,
@@ -19,7 +19,8 @@ class TabBarIconButton extends StatelessWidget {
       width: 64,
       child: IconButton(
         onPressed: onPress,
-        icon: Icon(iconImage),
+        icon: Image.asset(iconImage,color: color,),
+
       ),
     );
   }

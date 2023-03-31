@@ -15,41 +15,73 @@ class _DiscardWaterScreenState extends State<DiscardWaterScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: StreamBuilder(
-          stream: ref.onValue,
-          builder: (context, AsyncSnapshot<DatabaseEvent> snapshot) {
-            return !snapshot.hasData
-                ? const Center(child: CircularProgressIndicator())
-                : SizedBox(
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          "Discard Water",
-                          style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          snapshot.data!.snapshot
-                              .child('Discard_water_in_day')
-                              .value
-                              .toString(),
-                          style: const TextStyle(
-                              color: Colors.red,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                  );
-          },
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.lightGreen,
+          title: const Text("Smart Sustainable Solution"),
+        ),
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/discard_water.jpg"),
+              fit: BoxFit.fill,
+            ),
+          ),
+          child: StreamBuilder(
+            stream: ref.onValue,
+            builder: (context, AsyncSnapshot<DatabaseEvent> snapshot) {
+              return !snapshot.hasData
+                  ? const Center(child: CircularProgressIndicator())
+                  : SizedBox(
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const SizedBox(
+                            height: 180,
+                          ),
+                          const Text(
+                            "Discard Water",
+                            style: TextStyle(
+                                color: Colors.lightGreen,
+                                fontSize: 44,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                snapshot.data!.snapshot
+                                    .child('Discard_water_in_day')
+                                    .value
+                                    .toString(),
+                                style: const TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 60,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(width: 10,),
+                              const Text(
+                                "Litters",
+                                style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    );
+            },
+          ),
         ),
       ),
     );
